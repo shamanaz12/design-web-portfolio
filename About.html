@@ -7,46 +7,61 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="font-sans bg-gray-100">
 
-    <!-- Navigation Bar -->
-    <header class="bg-blue-600 text-white p-4">
-        <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+    <header class="p-4 text-white bg-blue-600">
+        <div class="flex items-center justify-between max-w-screen-lg mx-auto">
             <a href="/" class="text-2xl font-bold">My Portfolio</a>
-            <nav>
-                <ul class="flex space-x-4">
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
                     <li><a href="index.html" class="hover:underline">Home</a></li>
                     <li><a href="about.html" class="hover:underline">About</a></li>
                     <li><a href="contact.html" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
+            <div class="flex items-center md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden w-full text-white bg-blue-600 md:hidden">
+            <ul class="py-4 space-y-4 text-center">
+                <li><a href="index.html" class="block hover:underline">Home</a></li>
+                <li><a href="about.html" class="block hover:underline">About</a></li>
+                <li><a href="contact.html" class="block hover:underline">Contact</a></li>
+            </ul>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="bg-blue-50 py-20 text-gray-700">
-        <div class="max-w-screen-md mx-auto text-center px-4">
-            <h2 class="text-4xl font-semibold mb-6 sm:text-3xl text-blue-600">About Me</h2>
+    <section class="py-20 text-gray-700 bg-blue-50">
+        <div class="max-w-screen-md px-4 mx-auto text-center">
+            <h2 class="mb-6 text-4xl font-semibold text-blue-600 sm:text-3xl">About Me</h2>
 
-            <!-- About Content -->
-            <p class="text-lg mb-4">
+            <p class="mb-4 text-lg">
                 My name is <strong>Shama Naz</strong>. I am a graduate with experience in banking and insurance policies. Over the years, I've gained valuable skills in the financial sector, and I’m passionate about helping people navigate through complex financial decisions.
             </p>
             
-            <p class="text-lg mb-4">
+            <p class="mb-4 text-lg">
                 I am a very vocal person who speaks my mind, and I can't bear to see anyone suffer. I'm a sensitive individual who always thinks well of others and tries to create a positive environment around me. However, I have zero tolerance for dishonest or deceitful people—cheaters and fraudsters are something I cannot stand.
             </p>
 
-            <p class="text-lg mb-4">
+            <p class="mb-4 text-lg">
                 In my personal life, I am content and happy living independently. I believe in being true to myself and staying positive, no matter the circumstances.
             </p>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-600 text-white py-6 text-center">
-        <p>&copy; 2024 My Portfoli.</p>
+    <footer class="py-6 text-center text-white bg-blue-600">
+        <p>&copy; 2024 My Portfolio.</p>
     </footer>
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 </html>

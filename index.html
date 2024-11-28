@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - My Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
-</head>
-<body class="bg-gray-100 font-sans">
-    <header class="bg-blue-600 text-white p-4">
-        <div class="max-w-screen-lg mx-auto flex justify-between items-center">
-            <a href="/" class="text-2xl font-bold">My Portfolio</a>
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="index.html" class="hover:underline">Home</a></li>
-                    <li><a href="about.html" class="hover:underline">About</a></li>
-                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <header class="p-4 text-white bg-blue-600">
+      <div class="flex items-center justify-between max-w-screen-lg mx-auto">
+        <a href="/" class="text-2xl font-bold">My Portfolio</a>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="py-20 text-center text-white bg-blue-500">
+      <h1 class="text-5xl font-bold sm:text-4xl md:text-5xl">
+        Welcome to My Portfolio
+      </h1>
+      <p class="mt-4 text-lg sm:text-base md:text-lg">
+        Discover my work, experience, and projects.
+      </p>
+    </section>
 
-    <section class="bg-blue-500 text-white text-center py-20">
-        <h1 class="text-5xl font-bold sm:text-4xl md:text-5xl">Welcome to My Portfolio</h1>
-        <p class="mt-4 text-lg sm:text-base md:text-lg">Discover my work, experience, and projects.</p>
-    </section>
+    <!-- Featured Projects Section -->
     <section class="py-16 bg-gray-200">
-        <div class="max-w-screen-lg mx-auto">
-            <h2 class="text-3xl font-semibold text-center">Featured Projects</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                <div class="bg-white p-6 shadow-lg rounded-md">
-                    <h3 class="text-xl font-semibold">Project 1</h3>
-                    <p class="mt-4">Short description of the project.</p>
-                </div>
-                <div class="bg-white p-6 shadow-lg rounded-md">
-                    <h3 class="text-xl font-semibold">Project 2</h3>
-                    <p class="mt-4">Short description of the project.</p>
-                </div>
-                <div class="bg-white p-6 shadow-lg rounded-md">
-                    <h3 class="text-xl font-semibold">Project 3</h3>
-                    <p class="mt-4">Short description of the project.</p>
-                </div>
-            </div>
+      <div class="max-w-screen-lg mx-auto">
+        <h2 class="text-3xl font-semibold text-center">Featured Projects</h2>
+        <div class="grid grid-cols-1 gap-8 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Project 1 -->
+          <div class="p-6 bg-white rounded-md shadow-lg">
+            <h3 class="text-xl font-semibold">Project 1</h3>
+            <p class="mt-4">
+              My portfolio is a testament to my passion, creativity, and
+              dedication to delivering impactful results. Each project showcases
+              my ability to blend design with functionality, ensuring both
+              aesthetic appeal and practical solutions. It represents my journey
+              of constant learning and my drive to push boundaries with every
+              new challenge.
+            </p>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="p-6 bg-white rounded-md shadow-lg">
+            <h3 class="text-xl font-semibold">Project 2</h3>
+            <p class="mt-4">
+              My portfolio highlights the diversity and quality of my work,
+              demonstrating my ability to adapt to different challenges and
+              client needs. Each project reflects my commitment to excellence,
+              innovation, and continuous growth. It's a visual story of my
+              professional evolution and the passion I bring to every endeavor.
+            </p>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="p-6 bg-white rounded-md shadow-lg">
+            <h3 class="text-xl font-semibold">Project 3</h3>
+            <p class="mt-4">
+              My portfolio is a curated collection of my best work, showcasing
+              my ability to turn ideas into reality through creativity and
+              precision. Every project reflects my commitment to quality,
+              attention to detail, and a deep understanding of client needs.
+              It's not just a display of skills, but a story of my growth and
+              passion in the world of design and innovation.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    <footer class="bg-blue-600 text-white py-6 text-center">
-        <p>&copy; 2024 My Portfolio.</p>
+
+    <!-- Footer -->
+    <footer class="py-6 mt-8 text-center text-white bg-blue-600">
+      <p>&copy; 2024 My Portfolio.</p>
     </footer>
-</body>
+  </body>
 </html>
